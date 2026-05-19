@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Snack 'N' Style — Snacks You Crave, Styles You Love. Shop clothes, shoes & snacks.">
+  <meta property="og:title" content="Snack 'N' Style">
+  <meta property="og:description" content="Snacks You Crave, Styles You Love.">
+  <meta property="og:type" content="website">
+  <title>Snack 'N' Style — Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Home-specific overrides */
+    .new-arrivals { background: var(--bg); }
+    .categories-section { background: var(--white); border-top: 3px solid var(--black); border-bottom: 3px solid var(--black); }
+  </style>
+</head>
+<body data-page="home">
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Snack<span>'N'</span><em>Style</em></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="shop.html?category=clothes" class="nav-link">Clothes</a></li>
+        <li><a href="shop.html?category=shoes" class="nav-link">Shoes</a></li>
+        <li><a href="shop.html?category=snacks" class="nav-link">Snacks</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-link" aria-label="Cart">
+          <i class="fas fa-bag-shopping"></i>
+          <span id="cart-badge">0</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop All</a>
+      <a href="shop.html?category=clothes">Clothes</a>
+      <a href="shop.html?category=shoes">Shoes</a>
+      <a href="shop.html?category=snacks">Snacks</a>
+      <a href="about.html">About</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-blob b1"></div>
+      <div class="hero-blob b2"></div>
+      <div class="hero-blob b3"></div>
+    </div>
+
+    <!-- Floating sparkles -->
+    <span class="hero-sparkle s1">✦</span>
+    <span class="hero-sparkle s2">★</span>
+    <span class="hero-sparkle s3">✸</span>
+    <span class="hero-sparkle s4">✦</span>
+
+    <div class="container hero-content">
+      <div class="hero-pill">
+        <i class="fas fa-crown"></i>
+        New Collection Drop
+      </div>
+      <h1 class="hero-title">
+        SNACKS YOU CRAVE,<br>
+        <span class="gradient-text">STYLES YOU LOVE</span>
+      </h1>
+      <p class="hero-sub">
+        Your one-stop shop for bold street fashion and delicious snacks. Because why choose?
+      </p>
+      <div class="hero-ctas">
+        <a href="shop.html" class="btn btn-primary">
+          <i class="fas fa-bag-shopping"></i> Shop Now
+        </a>
+        <a href="shop.html?category=clothes" class="btn btn-outline">
+          <i class="fas fa-tshirt"></i> View Lookbook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>✦ SNACKS YOU CRAVE</span>
+      <span>✦ STYLES YOU LOVE</span>
+      <span>✦ FREE DELIVERY OVER $50</span>
+      <span>✦ NEW ARRIVALS WEEKLY</span>
+      <span>✦ BOLD FITS &amp; FRESH KICKS</span>
+      <span>✦ SNACK N STYLE</span>
+      <!-- Duplicate for seamless loop -->
+      <span>✦ SNACKS YOU CRAVE</span>
+      <span>✦ STYLES YOU LOVE</span>
+      <span>✦ FREE DELIVERY OVER $50</span>
+      <span>✦ NEW ARRIVALS WEEKLY</span>
+      <span>✦ BOLD FITS &amp; FRESH KICKS</span>
+      <span>✦ SNACK N STYLE</span>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <section class="section categories-section">
+    <div class="container">
+      <h2 class="section-title text-center">Shop by <span class="highlight">Category</span></h2>
+      <div class="category-grid">
+        <a href="shop.html?category=clothes" class="category-card cat-clothes">
+          <div class="cat-icon"><i class="fas fa-tshirt"></i></div>
+          <h3>Clothes</h3>
+          <p>Fresh fits, bold graphics, street-ready style</p>
+        </a>
+        <a href="shop.html?category=shoes" class="category-card cat-shoes">
+          <div class="cat-icon"><i class="fas fa-shoe-prints"></i></div>
+          <h3>Shoes</h3>
+          <p>Kicks that hit different, from court to street</p>
+        </a>
+        <a href="shop.html?category=snacks" class="category-card cat-snacks">
+          <div class="cat-icon"><i class="fas fa-cookie-bite"></i></div>
+          <h3>Snacks</h3>
+          <p>Munchies for every mood, craving satisfied</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="section new-arrivals">
+    <div class="container">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:16px; margin-bottom:40px;">
+        <h2 class="section-title" style="margin-bottom:0">New <span class="highlight">Arrivals</span></h2>
+        <a href="shop.html" class="btn btn-outline" style="font-size:0.88rem; padding:10px 20px;">
+          See All <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="product-grid" id="home-products"></div>
+    </div>
+  </section>
+
+  <!-- Second Marquee (reversed, pink) -->
+  <div class="marquee-strip" style="background:var(--pink); border-color:var(--black);">
+    <div class="marquee-track" style="animation-direction:reverse; animation-duration:28s;">
+      <span style="color:var(--white);">★ HOTTEST DROPS</span>
+      <span style="color:var(--white);">★ CLOTHES</span>
+      <span style="color:var(--white);">★ SHOES</span>
+      <span style="color:var(--white);">★ SNACKS</span>
+      <span style="color:var(--white);">★ SNACK N STYLE</span>
+      <span style="color:var(--white);">★ SHOP NOW</span>
+      <span style="color:var(--white);">★ HOTTEST DROPS</span>
+      <span style="color:var(--white);">★ CLOTHES</span>
+      <span style="color:var(--white);">★ SHOES</span>
+      <span style="color:var(--white);">★ SNACKS</span>
+      <span style="color:var(--white);">★ SNACK N STYLE</span>
+      <span style="color:var(--white);">★ SHOP NOW</span>
+    </div>
+  </div>
+
+  <!-- Brand Motto Strip -->
+  <section style="background:var(--black); padding:80px 0; text-align:center;">
+    <div class="container">
+      <p style="font-family:var(--font-head); font-size:clamp(2rem,5vw,4rem); color:var(--white); letter-spacing:2px; line-height:1.1;">
+        SNACKS YOU CRAVE,<br>
+        <span style="color:var(--yellow);">STYLES YOU LOVE</span>
+        <span style="color:var(--pink);">♡</span>
+      </p>
+      <p style="color:#888; margin-top:16px; font-size:1rem;">Discover the collection that has your vibe</p>
+      <a href="shop.html" class="btn btn-primary" style="margin-top:28px;">
+        <i class="fas fa-crown"></i> Shop The Collection
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Snack<span>'N'</span>Style</div>
+          <p class="footer-tagline">Snacks You Crave, Styles You Love ♡</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Shop</h4>
+          <div class="footer-links">
+            <a href="shop.html">All Products</a>
+            <a href="shop.html?category=clothes">Clothes</a>
+            <a href="shop.html?category=shoes">Shoes</a>
+            <a href="shop.html?category=snacks">Snacks</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Info</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="about.html#contact">Contact</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Snack 'N' Style. All rights reserved.</p>
+        <p>Made with <span style="color:var(--pink)">♡</span> for bold souls</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

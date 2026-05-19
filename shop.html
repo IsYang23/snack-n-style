@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop all clothes, shoes and snacks at Snack 'N' Style.">
+  <title>Shop — Snack 'N' Style</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body data-page="shop">
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Snack<span>'N'</span><em>Style</em></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="shop.html" class="nav-link">Shop</a></li>
+        <li><a href="shop.html?category=clothes" class="nav-link">Clothes</a></li>
+        <li><a href="shop.html?category=shoes" class="nav-link">Shoes</a></li>
+        <li><a href="shop.html?category=snacks" class="nav-link">Snacks</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-link" aria-label="Cart">
+          <i class="fas fa-bag-shopping"></i>
+          <span id="cart-badge">0</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop All</a>
+      <a href="shop.html?category=clothes">Clothes</a>
+      <a href="shop.html?category=shoes">Shoes</a>
+      <a href="shop.html?category=snacks">Snacks</a>
+      <a href="about.html">About</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="accent-bar"></div>
+  <div class="page-header">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Shop</p>
+      <h1>The <span class="gradient-text">Shop</span></h1>
+    </div>
+  </div>
+
+  <!-- Shop Section -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter + Count header -->
+      <div class="shop-header">
+        <div class="filter-bar">
+          <button class="filter-btn" data-category="all">All</button>
+          <button class="filter-btn" data-category="clothes">
+            <i class="fas fa-tshirt"></i> Clothes
+          </button>
+          <button class="filter-btn" data-category="shoes">
+            <i class="fas fa-shoe-prints"></i> Shoes
+          </button>
+          <button class="filter-btn" data-category="snacks">
+            <i class="fas fa-cookie-bite"></i> Snacks
+          </button>
+        </div>
+        <p class="product-count-label"><span id="product-count">20 products</span></p>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="shop-grid"></div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">Snack<span>'N'</span>Style</div>
+          <p class="footer-tagline">Snacks You Crave, Styles You Love ♡</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Shop</h4>
+          <div class="footer-links">
+            <a href="shop.html">All Products</a>
+            <a href="shop.html?category=clothes">Clothes</a>
+            <a href="shop.html?category=shoes">Shoes</a>
+            <a href="shop.html?category=snacks">Snacks</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Info</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="about.html#contact">Contact</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Returns</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Snack 'N' Style. All rights reserved.</p>
+        <p>Made with <span style="color:var(--pink)">♡</span> for bold souls</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
