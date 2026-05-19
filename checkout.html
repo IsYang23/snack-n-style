@@ -282,6 +282,19 @@
           <p style="font-size:0.75rem; color:var(--gray-mid); margin-top:8px; text-align:center;">
             Free shipping on orders over $50
           </p>
+          <div id="delivery-notice" style="
+            display:flex; align-items:flex-start; gap:10px;
+            margin-top:14px; padding:12px 14px;
+            background:rgba(0,201,200,0.07);
+            border:2px solid var(--teal);
+            border-radius:var(--radius-sm);
+            font-size:0.82rem; color:#333;">
+            <i class="fas fa-truck-fast" style="color:var(--teal); margin-top:2px; flex-shrink:0;"></i>
+            <div>
+              <strong style="display:block; margin-bottom:2px;">Estimated Delivery</strong>
+              <span id="delivery-date-text">Order today — delivery within 2 days.</span>
+            </div>
+          </div>
           <div style="margin-top:20px; padding-top:16px; border-top:1px solid var(--gray);">
             <div style="display:flex; gap:12px; justify-content:center; font-size:1.2rem; color:var(--gray-mid);">
               <i class="fab fa-cc-visa"></i>
@@ -353,6 +366,16 @@
       if (val.length >= 3) val = val.substring(0, 2) + ' / ' + val.substring(2);
       input.value = val;
     }
+
+    // Set dynamic delivery date (purchase date + 2 days)
+    (function () {
+      const d = new Date();
+      d.setDate(d.getDate() + 2);
+      const opts = { weekday: 'long', month: 'long', day: 'numeric' };
+      const dateStr = d.toLocaleDateString('en-US', opts);
+      const el = document.getElementById('delivery-date-text');
+      if (el) el.textContent = 'Expected by ' + dateStr + ' (2 days after purchase).';
+    })();
 
     // Keep pay button total in sync
     document.addEventListener('DOMContentLoaded', () => {
